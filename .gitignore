@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Obsidian — per-machine state (keep config, skip ephemeral UI)
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# Obsidian trash (local soft-delete bin)
+.trash/
+
+# Editor / OS scratch
+*.swp
+*.swo
+*~
+
+# Sync conflict markers (Obsidian Sync, iCloud)
+*.conflict
+*.conflict-*
+
+# Build / temp
+.tmp/
+node_modules/
+.claude/scratch/
