@@ -13,12 +13,18 @@ The fix, which `setup.sh` installs: a dedicated `~/.openclaw/claude-config/setti
 ## Steps
 
 1. **Install prerequisites.** Node 22+ (nvm), `npm i -g openclaw`, Claude Code (logged into your subscription), and optionally [`gog`](https://github.com/) for Google Calendar/Gmail.
-2. **Run `./alfred/setup.sh`** from the vault root. It checks prereqs, installs the scoped settings (with your paths), and drops in the persona templates.
-3. **Make the assistant yours.** Edit `~/.openclaw/workspace/USER.md` (who you are) and `SOUL.md` (its character). This is what turns a generic bot into *your* assistant — worth the ten minutes.
-4. **Secrets.** Create a Telegram bot via @BotFather, save the token to `~/.openclaw/secrets/telegram.token`. Run `gog auth login` for Google (request **gmail.readonly** — never full Gmail). Set `gog config set gmail_no_send true` as a second layer.
-5. **Configure `~/.openclaw/openclaw.json`:** loopback bind, the Claude CLI backend with the scoped-settings args (step in `setup.sh` output), your Telegram allowlist (your id only), and `skills.load.extraDirs` pointing at this vault's `.claude/skills/`.
-6. **Resilience (optional but recommended).** The `templates/` here include a daily config backup and a watchdog; wire them as launchd agents. Keep `~/.openclaw` (secrets) **out of git** — back it up via Time Machine / iCloud instead.
-7. `openclaw gateway restart`, message your bot, and schedule the skills you want as cron jobs (a morning brief, a weekly commitments sweep, a research digest).
+2. **Bring up the engine (open-core base).** Run OpenClaw's own onboarding to install the loopback gateway as a launchd daemon:
+   ```
+   openclaw onboard --install-daemon
+   ```
+   This is the open-source foundation; everything below layers on top of it. Confirm it's up with `openclaw gateway status`.
+3. **Run `./alfred/setup.sh`** from the vault root. It checks prereqs + the daemon, installs the scoped settings (with your paths), drops in the persona templates, and installs the **backup + watchdog** launchd agents (self-healing + daily backup) automatically.
+4. **Make the assistant yours.** Edit `~/.openclaw/workspace/USER.md` (who you are) and `SOUL.md` (its character). This is what turns a generic bot into *your* assistant — worth the ten minutes.
+5. **Secrets.** Create a Telegram bot via @BotFather, save the token to `~/.openclaw/secrets/telegram.token`. Run `gog auth login` for Google (request **gmail.readonly** — never full Gmail). Set `gog config set gmail_no_send true` as a second layer.
+6. **Configure `~/.openclaw/openclaw.json`:** loopback bind, the Claude CLI backend with the scoped-settings args (printed by `setup.sh`), your Telegram allowlist (your id only), and `skills.load.extraDirs` pointing at this vault's `.claude/skills/`.
+7. `openclaw gateway restart`, message your bot, and schedule the skills you want as cron jobs (e.g. `triage` silently before a morning `plan-day`, a weekly `commitments` sweep, a `research-digest`).
+
+**Durability note:** keep `~/.openclaw` (it holds secrets) **out of git**. `setup.sh` installs a daily backup to `~/.openclaw-backups/` — add that folder to Time Machine / iCloud for off-disk safety. To get Telegram alerts when the gateway dies, set `NOTIFY_TELEGRAM=1` + `TG_CHAT` in `~/.openclaw/bin/watchdog.sh`.
 
 ## What you get
 
