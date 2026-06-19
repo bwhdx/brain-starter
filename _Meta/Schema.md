@@ -132,7 +132,9 @@ employer: ""
 role: ""
 last_contact: 2026-05-20
 follow_up:              # date when you want to reach out
-birthday:
+cadence:                # optional: weekly | monthly | quarterly — overrides the relationship default (e.g. local friends = weekly)
+birthday:               # optional: MM-DD (recurs annually) — surfaced by /commitments
+anniversary:            # optional: MM-DD — surfaced by /commitments
 tags: []
 ---
 ```

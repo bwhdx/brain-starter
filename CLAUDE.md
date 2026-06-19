@@ -55,7 +55,9 @@ Full schemas live in `_Meta/Schema.md`. Quick reference:
 | `area` | `domain`, `status` | — |
 | `map` | — | `tags` |
 
-**Important:** `authors`, `tags`, `themes`, `related` are **plain strings**, NOT wikilinks. Wikilinks in YAML create dangling graph nodes. Use wikilinks only in note bodies.
+**Important — two kinds of YAML field:**
+- **Facet fields** (`authors`, `tags`, `themes`) are **plain strings**, never wikilinks. They're categories, not graph edges; linking them pollutes the graph.
+- **Linking fields** (`source`, `sources`, `related`, `seed`, `draft`, `trips`) **are** wikilinks (`"[[Target]]"`), quoted. Obsidian renders these as clickable Properties and real graph edges — intended, and matches `_Meta/Schema.md`. Only link to notes that exist. Freeform prose fields like `notes` stay plain text.
 
 ## Wikilink rules
 
@@ -122,7 +124,7 @@ After reading: extract one *insight* (not a highlight) per atom. Place in `20 At
 ## Don't do
 
 - ❌ Edit auto-generated files (`_Meta/Bases/*.base` should be edited via the Bases UI, not by hand)
-- ❌ Put wikilinks inside YAML frontmatter (use plain strings)
+- ❌ Put wikilinks in **facet** YAML fields (`authors`, `tags`, `themes`) — those stay plain strings. (Linking fields like `source`/`related`/`seed` *do* take wikilinks — see frontmatter conventions above.)
 - ❌ Add `#tags` inside note bodies — use `tags:` in frontmatter for queryability
 - ❌ Create deep folder hierarchies — flatter is better, MOCs handle navigation
 - ❌ Append-and-forget on existing notes — atoms get *refined*, not bloated

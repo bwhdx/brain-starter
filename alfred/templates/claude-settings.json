@@ -1,0 +1,33 @@
+{
+  "_comment": "Scoped permissions for the assistant's Claude CLI backend. THIS IS THE REAL SECURITY BOUNDARY — OpenClaw's Docker/tool policy does NOT wrap the claude-cli cognition (it runs on the host). The backend loads this via: --setting-sources project --settings <this file>, which excludes your personal ~/.claude/settings.json. setup.sh substitutes __VAULT__ and __HOME__.",
+  "permissions": {
+    "allow": [
+      "Read(//__VAULT__/**)",
+      "Edit(//__VAULT__/**)",
+      "Write(//__VAULT__/**)",
+      "Read(//__HOME__/.openclaw/workspace/**)",
+      "Edit(//__HOME__/.openclaw/workspace/**)",
+      "Write(//__HOME__/.openclaw/workspace/**)",
+      "Grep",
+      "Glob",
+      "Bash(gog:*)",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "deny": [
+      "Bash(git push:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(rm:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(aws:*)",
+      "Bash(docker:*)",
+      "Bash(ssh:*)",
+      "Bash(scp:*)",
+      "Bash(sudo:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean:*)"
+    ]
+  }
+}
