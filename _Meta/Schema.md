@@ -209,6 +209,7 @@ quarter:                # 1-4 if quarterly
 status: active | done | abandoned
 created: 2026-05-26
 target_date:
+last_reviewed:          # ISO date — triage stamps this each review; lets it spot a goal that's gone quiet
 metric: ""
 tags: []
 ---

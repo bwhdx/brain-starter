@@ -22,4 +22,4 @@ The fix, which `setup.sh` installs: a dedicated `~/.openclaw/claude-config/setti
 
 ## What you get
 
-The vault skills (`/think`, `/commitments`, `/resurface`, `/research`, plus capture/draft/grade/review…) now run from your phone and on a schedule — a proactive assistant grounded in your own corpus, not a generic chatbot. Treat email and web content as untrusted data; keep anything that sends or posts behind a confirmation.
+The vault skills now run from your phone and on a schedule — a proactive assistant grounded in your own corpus, not a generic chatbot. The spine is **`/triage`** (the upstream engine that trawls the whole brain, ranks priorities, and writes your day's Top-6) feeding **`/plan-day`** (the morning brief) and **`/wind-down`** (the evening close); plus `/think`, `/commitments`, `/follow-up`, `/scan-deadlines`, `/research`+`/research-digest`, `/resurface`, and the capture/draft/grade loop. **Read `_Meta/Assistant — system design.md` for how they interconnect** (upstream → state → downstream). Treat email and web content as untrusted data; keep anything that sends or posts behind a confirmation.
