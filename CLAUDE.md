@@ -92,6 +92,9 @@ Drafting for LinkedIn/Twitter/TikTok? Read these first:
 - **Wisdom-reveal openers / closers:** 0. Includes "Here's what I didn't expect:", "What I didn't expect was that X", "Turns out X was the whole reason Y", "The lesson is X", "It comes down to X". AI cannot resist closing the loop; resisting closure is the most reliable single signal of a human.
 - **Colon-followed-by-list setups:** 0
 - **Hyper-parallel sentences** (3+ consecutive with identical syntactic shape): 0
+- **Antithesis-for-emphasis** ("X, not Y" / "…, not A, not B" / "Less X, more Y"): 0–1, and only if it's genuinely how you'd say it aloud. The single most overused AI move; the contrast is usually implied without the "not Y" tail.
+- **Definitional aphorisms** ("X is the Y" stated as a law): rare and earned only. One lived signature line is fine; ideas arriving as tidy equations sentence after sentence is the tell.
+- **The slack test (the deep one):** AI writes to *perform* — every sentence engineered to land, no slack between them. A human drops one sharp line into a paragraph of ordinary talk and lets the rest breathe. If every sentence is doing rhetorical work, it's AI — even when each line passes the caps above. Wall-to-wall mic-drops is the signature.
 - **Banned AI vocabulary:** delve, tapestry, navigate (abstract), leverage (verb), nuanced, multifaceted, seamless, paradigm, unlock (abstract), realm, journey (metaphor), embrace (metaphor), foster, robust (non-technical), holistic
 - **Banned journalistic clichés:** "the thinking goes", "as the saying goes", "or so they say", "the conventional wisdom is", "in a sense", "it could be argued", "one might say", "so to speak", "if you will"
 

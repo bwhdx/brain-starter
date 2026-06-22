@@ -121,3 +121,24 @@ If short on time, check these three:
 3. **Read paragraph 1 out loud** — does it sound like you, or like a polished AI? Trust the gut.
 
 If any of the three fails, the post fails the gate regardless of other scores.
+
+## Two more AI patterns (the performance tell)
+
+The patterns above are devices. This is the gestalt they add up to: **AI writes to perform insight.** Every sentence engineered to land, ideas delivered as clean quotable units with no slack between them. A human drops one sharp line into a paragraph of ordinary talk. Two constructions slip past the device-checks and are the most common AI moves of all:
+
+- [ ] **Antithesis-for-emphasis — "X, not Y" / "Less X, more Y".** Asserting by confident contrast. The single most overused AI move. Cap 0–1, and only if it's how you'd say it out loud; the contrast is almost always implied without the "not Y" tail.
+- [ ] **The definitional aphorism — "X is the Y"** stated as a law. Fine once if earned and lived; the tell is repetition, claims arriving as tidy equations.
+- [ ] **The slack test.** If *every* sentence in a paragraph is doing rhetorical work — no flat, ordinary, just-getting-you-to-the-next-thought line — it's AI, even when each line passes every cap. Wall-to-wall mic-drops is the signature.
+
+## The voice test — is the author in there? (the positive half)
+
+Everything above is a **negative** filter: it removes the machine. It does not confirm *you*. A post can pass every anti-AI rule and still be anonymous — clean, competent, writable by anyone. That fails too, just more quietly. **The core question: could only you have written this, or could anyone?**
+
+- [ ] **The only-you test.** Strip the topic away. Does what's left need *your* specific perception, experience, and register — or could a competent stranger have produced it?
+- [ ] **Rhythm match.** Does it move the way *you* actually write or talk? Note your own median sentence length and your beats (keep them in [[Vocabulary]]). Over-correcting *away* from AI into long rolling sentences is its own failure if that isn't your rhythm.
+- [ ] **Your fingerprint, where natural.** Your real signature phrases and register — kept in [[Vocabulary]] — appear where they fit. **Never force them; keyword-stuffing signatures is as fake as AI cadence.**
+- [ ] **The recognition test.** Strip the byline and show it to someone who's read your stuff. Would they know it's you? If their honest guess is "some AI wrote this," the voice isn't there yet.
+
+Both halves are required to ship: pass the cadence test (no machine) **and** the voice test (the author is in there). *Not-AI is the floor; sounds-like-you is the bar.*
+
+> This positive test only works if you've written down what *your* voice actually is. Keep a [[Vocabulary]] note of your signature phrases, your rhythm, and the words you'd never use — then it has something concrete to check against.
